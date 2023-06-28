@@ -16,6 +16,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatStepperModule} from '@angular/material/stepper';
 import { ProfileComponent } from './profile/profile.component';
 import {MatCardModule} from '@angular/material/card';
+import { BottomSheetOverviewExampleSheetComponent } from './profile/bottom-sheet-overview-example-sheet/bottom-sheet-overview-example-sheet.component';
+import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
+import {MatListModule} from '@angular/material/list';
 
 
 @NgModule({
@@ -23,10 +26,13 @@ import {MatCardModule} from '@angular/material/card';
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    ProfileComponent
+    ProfileComponent,
+    BottomSheetOverviewExampleSheetComponent
   ],
   imports: [
     BrowserModule,
+    MatListModule,
+    MatBottomSheetModule,
     MatCardModule,
     AppRoutingModule,
     BrowserAnimationsModule,
